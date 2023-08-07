@@ -1,0 +1,19 @@
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+/Users/shohei/.rbenv/versions/2.7.6/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-170gy8y sitelibdir\=./.gem.20230807-81925-170gy8y clean
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-170gy8y sitelibdir\=./.gem.20230807-81925-170gy8y
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-170gy8y sitelibdir\=./.gem.20230807-81925-170gy8y install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20230807-81925-170gy8y/debug
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-170gy8y sitelibdir\=./.gem.20230807-81925-170gy8y clean

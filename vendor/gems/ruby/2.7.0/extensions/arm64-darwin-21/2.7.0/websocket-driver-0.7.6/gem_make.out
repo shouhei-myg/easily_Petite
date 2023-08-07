@@ -1,0 +1,18 @@
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/shohei/.rbenv/versions/2.7.6/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-q9h6vt sitelibdir\=./.gem.20230807-81925-q9h6vt clean
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-q9h6vt sitelibdir\=./.gem.20230807-81925-q9h6vt
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-q9h6vt sitelibdir\=./.gem.20230807-81925-q9h6vt install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230807-81925-q9h6vt
+
+current directory: /Users/shohei/projects/easily_Petite/vendor/gems/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230807-81925-q9h6vt sitelibdir\=./.gem.20230807-81925-q9h6vt clean
