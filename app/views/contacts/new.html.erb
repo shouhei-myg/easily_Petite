@@ -2,28 +2,29 @@
 <h1>お問合せフォーム</h1>
 <%= form_for(@contact, url: confirm_path) do |f| %>
   <div class="form-group" style="width: 30%;">
-    <%= f.label :name, 'name*' %>
-    <%= f.text_field :name, autofocus: true, class: 'form-control', placeholder: "name" %>
+    <%= f.label :name, '*name*' %>
+    <%= f.text_field :name, autofocus: true, class: 'form-control', placeholder: "name", required: true %>
   </div>
   </br>
   <div class="form-group" style="width: 30%;">
-    <%= f.label :name, 'Enter email*'%>
-    <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email"  %>
+    <%= f.label :name, '*Enter email*'%>
+    <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email", required: true  %>
   </div>
   </br>
   <div class="form-group" style="width: 30%;">
-    <%= f.label :name, 'Phone Number*' %>
-    <%= f.text_field :phone_number, autofocus: true, class: 'form-control', placeholder: "Phone Number" %>
+    <%= f.label :name, '*Phone Number*' %>
+    <%= f.text_field :phone_number, autofocus: true, class: 'form-control', placeholder: "Phone Number", required: true %>
   </div>
   </br>
   <div class="form-group" style="width: 30%;">
-    <%= f.label :subject, 'Subject*' %>
-    <%= f.select :subject, Contact.subjects.keys, {prompt: "選択してください"} %>
+    <%= f.label :subject, '*Subject*' %>
+    <%= f.select :subject, Contact.subjects_i18n.keys.map{|k| [I18n.t("enums.contact.subject.#{k}"), k]}, required: true %>
+
   </div>
   </br>
   <div class="form-group" style="width: 30%;">
-    <%= f.label :message, 'Message*' %>
-    <%= f.text_area :message, size: '10x10', class: 'form-control', placeholder: "Message" %>
+    <%= f.label :message, '*Message*' %>
+    <%= f.text_area :message, size: '10x10', class: 'form-control', placeholder: "Message", required: true %>
   </div>
   </br>
   <div>
