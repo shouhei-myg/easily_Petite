@@ -1,7 +1,7 @@
 ja:
-  enum: 
+  enums: 
     contact: # モデル名
       subject: # カラム名
-        estimate: '見積もり請求' # enumの値
-        question: '質問' # enumの値
-        introduction: '導入予定' # enumの値
+        estimate: '見積もり請求'
+        question: '質問'
+        introduction: '導入予定'
