@@ -71,6 +71,8 @@ GEM
     autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
     bindex (0.8.1)
+    bootsnap (1.16.0)
+      msgpack (~> 1.2)
     bootstrap (4.3.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
@@ -91,6 +93,12 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
+    enum_help (0.0.19)
+      activesupport (>= 3.0.0)
     erubi (1.12.0)
     execjs (2.8.1)
     ffi (1.15.5)
@@ -124,6 +132,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.19.0)
+    msgpack (1.7.2)
     mysql2 (0.5.5)
     net-imap (0.3.7)
       date
@@ -166,6 +175,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails-i18n (7.0.7)
+      i18n (>= 0.7, < 2)
+      railties (>= 6.0.0, < 8)
     railties (7.0.6)
       actionpack (= 7.0.6)
       activesupport (= 7.0.6)
@@ -231,15 +243,19 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  bootsnap
   bootstrap (~> 4.3.1)
   capybara
   debug
+  dotenv-rails
+  enum_help
   importmap-rails
   jbuilder
   jquery-rails
   mysql2 (~> 0.5)
   puma (~> 5.0)
   rails
+  rails-i18n
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
