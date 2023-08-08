@@ -1,5 +1,12 @@
 </br>
-<h1>お問合せフォーム</h1>
+<h2>お問合せフォーム</h2>
+<nav aria-label="パンくずリスト" class="small">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'トップページ', homes_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">お問い合わせ</li>
+  </ol>
+</nav>
+<hr />
 <%= form_for(@contact, url: confirm_path) do |f| %>
   <div class="form-group" style="width: 30%;">
     <%= f.label :name, '*name*' %>
