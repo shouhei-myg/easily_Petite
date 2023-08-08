@@ -1,27 +1,27 @@
 </br>
 <h1>お問合せフォーム</h1>
 <%= form_for(@contact, url: confirm_path) do |f| %>
-  <div class="form-group">
+  <div class="form-group" style="width: 30%;">
     <%= f.label :name, 'name*' %>
     <%= f.text_field :name, autofocus: true, class: 'form-control', placeholder: "name" %>
   </div>
   </br>
-  <div class="form-group">
+  <div class="form-group" style="width: 30%;">
     <%= f.label :name, 'Enter email*'%>
     <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email"  %>
   </div>
   </br>
-  <div class="form-group">
+  <div class="form-group" style="width: 30%;">
     <%= f.label :name, 'Phone Number*' %>
     <%= f.text_field :phone_number, autofocus: true, class: 'form-control', placeholder: "Phone Number" %>
   </div>
   </br>
-  <div class="form-group">
+  <div class="form-group" style="width: 30%;">
     <%= f.label :subject, 'Subject*' %>
-    <%= f.text_field :subject, autofocus: true, class: 'form-control', placeholder: "Subject" %>
+    <%= f.select :subject, Contact.subjects.keys, {prompt: "選択してください"} %>
   </div>
   </br>
-  <div class="form-group">
+  <div class="form-group" style="width: 30%;">
     <%= f.label :message, 'Message*' %>
     <%= f.text_area :message, size: '10x10', class: 'form-control', placeholder: "Message" %>
   </div>
