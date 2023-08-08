@@ -28,7 +28,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     puts '=================================='
-    p @contact
+    p @contact.subject
     puts '=================================='
     if @contact.save
       ContactMailer.send_mail(@contact).deliver_now
