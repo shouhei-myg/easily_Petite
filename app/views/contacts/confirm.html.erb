@@ -1,3 +1,13 @@
+</br>
+<h2>入力内容確認</h2>
+<nav aria-label="パンくずリスト" class="small">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><%= link_to 'トップページ', homes_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">お問い合わせ</li>
+  </ol>
+</nav>
+<hr />
+<p>この内容で送信します。よろしいですか？</p>
 <table>
   <tbody>
     <tr>
@@ -23,6 +33,7 @@
   </tbody>
   <tr>
     <td class="text-center" style="width: 30%;">
+    <br>
       <%= form_for(@contact) do |f| %>
         <%= f.hidden_field :name %>
         <%= f.hidden_field :email %>
@@ -33,6 +44,7 @@
       <% end %>
     </td>
     <td>
+    <br>
       <%= form_for @contact, url: back_path do |f| %>
         <%= f.hidden_field :name %>
         <%= f.hidden_field :email %>
@@ -44,3 +56,4 @@
     </td>
   </tr>
 </table>
+<br>

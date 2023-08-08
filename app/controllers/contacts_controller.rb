@@ -40,6 +40,7 @@ class ContactsController < ApplicationController
 
   # 送信完了画面を使用する場合お使いください。
   def done
+    # @contact = Contact.new(contact_params)
   end
 
   private
