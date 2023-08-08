@@ -7,7 +7,19 @@
   </ol>
 </nav>
 <hr />
+
 <%= form_for(@contact, url: confirm_path) do |f| %>
+  <% if @contact.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      <h5><strong>入力内容にエラーがあります。</strong></h5>
+      <ul>
+        <% @contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
   <div class="form-group" style="width: 30%;">
     <%= f.label :name, '*name*' %>
     <%= f.text_field :name, autofocus: true, class: 'form-control', placeholder: "name", required: true %>
