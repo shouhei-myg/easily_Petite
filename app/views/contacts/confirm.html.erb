@@ -21,21 +21,26 @@
       <td style="white-space: pre-wrap;"><%= @contact.message %></td>
     </tr>
   </tbody>
+  <tr>
+    <td class="text-center" style="width: 30%;">
+      <%= form_for(@contact) do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '送信', class: "btn btn-primary" %></div>
+      <% end %>
+    </td>
+    <td>
+      <%= form_for @contact, url: back_path do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '入力画面に戻る', class: "btn btn-danger" %></div>
+      <% end %>
+    </td>
+  </tr>
 </table>
-
-<%= form_for(@contact) do |f| %>
-  <%= f.hidden_field :name %>
-  <%= f.hidden_field :email %>
-  <%= f.hidden_field :phone_number %>
-  <%= f.hidden_field :subject %>
-  <%= f.hidden_field :message %>
-  <div><%= f.submit '送信' %></div>
-<% end %>
-<%= form_for @contact, url: back_path do |f| %>
-  <%= f.hidden_field :name %>
-  <%= f.hidden_field :email %>
-  <%= f.hidden_field :phone_number %>
-  <%= f.hidden_field :subject %>
-  <%= f.hidden_field :message %>
-  <div><%= f.submit '入力画面に戻る' %></div>
-<% end %>
