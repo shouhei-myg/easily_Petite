@@ -239,3 +239,243 @@ header .back p img {
     font-size: 20px;
     color: rgb(117, 116, 116);
 }
+
+
+/* ------------レスポンシブ------------ */
+@media screen and (max-width: 480px) {
+	body {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    color: rgb(117, 116, 116);
+  }
+  span {
+    color: #00947a;
+  }
+  
+  /* ------header */
+  header {
+  }
+  header .icon h1 {
+    margin: 0 auto;
+  }
+  header .back {
+    color: white;
+    background-color: #44617b;
+    width: 100%;
+    height: 200px;
+  }
+  header .back {
+    position: relative;
+  }
+  header .back p {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+  }
+  header .back h1 {
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 29px;
+    font-size: 20px;
+  }
+  header .back p img {
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, 45%);
+    width: 213px;
+    height: 115px;
+  }
+
+  /* ----------------reason */
+  .reason {
+    margin: 0px 20px;
+    padding-bottom: 15px;
+  }
+  .reason .reason_title {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .reason .reason_title h1 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .reason .reason_title p {
+    font-size:12px;
+  }
+
+  /* ------reason reason_explanation */
+  .reason  .reason_explanation{
+    padding: 10px 0px;
+  }
+  .reason  .reason_explanation p img {
+    height: 150px;
+    width: 100%;
+    border: 0.5px solid #edecec;
+  }
+  .reason  .reason_explanation p{
+    width: 60%;
+  }
+  .reason  .reason_explanation .box-017 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0.5em 0.5em 1em;
+  }
+  .reason  .reason_explanation .box-017 h4 {
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+  .reason  .reason_explanation .box-017 > div {
+    margin-bottom: -0.5em;
+    font-size: 1.05em;
+  }
+  .reason  .reason_explanation .box-017 > p {
+    width: 100%;
+    font-size: 10px;
+    color: rgb(117, 116, 116);
+    text-align: left;
+  }
+
+  /* ------back_question */
+  .back_question {
+    background-color: #f3f3f3;
+  }
+
+  /* ------question */
+  .question {
+    margin: 0px 20px;
+    padding-bottom: 40px;
+  }
+  .question h1 {
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  .question .qa-006 {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
+  .question .qa-006 summary {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2em 1em 1em 2em;
+    color: #757474;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .question .qa-006 summary::before,
+  .question .qa-006 p::before {
+    position: absolute;
+    left: 0em;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .question .qa-006 summary::before {
+    color: #75bbff;
+    content: "Q";
+  }
+  .question .qa-006 summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid #333333b3;
+    border-right: 3px solid #333333b3;
+    content: '';
+    transition: transform .5s;
+  }
+  .question .qa-006[open] summary::after {
+    transform: rotate(225deg);
+  }
+  .question .qa-006 p {
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 0em 1.5em;
+    font-size: 20px;
+    color: rgb(117, 116, 116);
+    transition: transform .5s, opacity .5s;
+  }
+  .question .qa-006[open] p {
+    transform: none;
+    opacity: 1;
+    text-align: left;
+    padding: 0px 0px 10px;
+    font-size: 10px;
+  }
+  .question.qa-006 p::before {
+    color: #ff8d8d;
+    line-height: 1.2;
+    content: "A";
+  }
+
+  /* ------bottom */
+  .bottom {
+    margin: 0px 20px;
+    padding-bottom: 40px;
+  }
+
+  /* ------link */
+  .link {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  .link .box-001 {
+    position: relative;
+    margin: 0 auto;
+    padding: calc(0.5em + 7px) 0.5em 0.5em;
+    border: 2px solid #e6edf3;
+    border-radius: 5px;
+    overflow: auto;
+    height: 100px;
+    width: 100px;
+  }
+  .link .box-001:hover {
+    background: #e7e7eb;
+  }
+  .link .box-001 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #c2c6c9;
+  }
+  .link .box-001 h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: rgb(117, 116, 116);
+  }
+  .link .box-001 p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    margin: 0;
+    padding: 0;
+    font-size: 5px;
+    color: rgb(117, 116, 116);
+  }
+}
