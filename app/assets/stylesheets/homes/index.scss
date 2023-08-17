@@ -1,8 +1,7 @@
 body {
-  // font-family: 'Sacramento', cursive;
-  font-family: 'Amatic SC', cursive;
   text-align: center;
   color: rgb(117, 116, 116);
+  margin: 0px;
 }
 span {
   color: #00947a;
@@ -334,8 +333,8 @@ header .back p img {
 /* ------------------レスポンシブ480px------------------ */
 @media screen and (max-width: 480px) {
 	body {
-    font-family: 'Sacramento', cursive;
     text-align: center;
+    
     color: rgb(117, 116, 116);
   }
   span {
@@ -344,6 +343,7 @@ header .back p img {
   
   /* ------header */
   header {
+    
   }
   header .back {
     color: white;
@@ -381,6 +381,10 @@ header .back p img {
     height: 115px;
   }
 
+  .main {
+
+  }
+
   /* ----------------reason */
   .reason {
     margin: 0px 20px;
@@ -396,7 +400,6 @@ header .back p img {
   .reason .reason_title {
     padding-top: 25px;
     padding-bottom: 20px;
-    background-color: #f3f3f3;
     margin-top: 30px;
   }
   .reason .reason_title h1 {
@@ -406,7 +409,7 @@ header .back p img {
   }
   .reason .reason_title p {
     font-size:10px;
-    line-height: 0px;
+    line-height: 3px;
   }
 
   /* ----------------------------------------reason reason_explanation */
@@ -428,17 +431,14 @@ header .back p img {
   }
   .reason  .reason_explanation_1 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason  .reason_explanation_2 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason .reason_explanation_3 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason  .reason_explanation_1 p{
