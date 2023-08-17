@@ -1,7 +1,7 @@
 body {
   text-align: center;
+  margin: 0px auto;
   color: rgb(117, 116, 116);
-  margin: 0px;
 }
 span {
   color: #00947a;
@@ -53,7 +53,7 @@ header .back p img {
 
 /* ------reason */
 .reason {
-  margin: 0px 400px;
+  margin: 0px 300px;
 }
 .reason .reason_title {
   padding-top: 90px;
@@ -79,21 +79,21 @@ header .back p img {
 /* --------------------------------------reason reason_explanation */
 .reason  .reason_explanation_1{
   display: flex;
-  padding: 70px 0px;
+  padding: 45px 0px;
   justify-content: space-between;
 }
 .reason  .reason_explanation_1 p img {
-  height: 422px;
-  width: 100%;
-  border: 0.5px solid rgb(117, 116, 116);
+  max-width: 100%;
+  height: auto;
+  padding-top: 8px;
 }
 .reason  .reason_explanation_1 p{
-  width: 50%;
+  width: 60%;
 }
 .reason  .reason_explanation_1 .box-017 {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
-  padding: 1.5em 1.5em 1em;
+  padding: 0em 1.5em 0em;
 }
 .reason  .reason_explanation_1 .box-017 h4 {
   border-bottom: 3px solid black;
@@ -102,34 +102,35 @@ header .back p img {
   background-color: #F3F3FB;
 }
 .reason  .reason_explanation_1 .box-017 > div {
-  margin-bottom: 1.0em;
   font-size: 1.05em;
 }
 .reason  .reason_explanation_1 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 40px;
+  margin: 0px auto;
+  line-height: 25px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
 /* --------------------------------------reason reason_explanation */
 .reason  .reason_explanation_2{
   display: flex;
-  padding: 70px 0px;
+  padding: 45px 0px;
   justify-content: space-between;
 }
 .reason  .reason_explanation_2 p img {
-  height: 422px;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-top: 8px;
   border: 0.5px solid rgb(117, 116, 116);
 }
 .reason  .reason_explanation_2 p{
-  width: 50%;
+  width: 60%;
 }
 .reason  .reason_explanation_2 .box-017 {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
-  padding: 1.5em 1.5em 1em;
+  padding: 0em 1.5em 0em;
 }
 .reason  .reason_explanation_2 .box-017 h4 {
   border-bottom: 3px solid black;
@@ -144,28 +145,30 @@ header .back p img {
 .reason  .reason_explanation_2 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 40px;
+  margin: 0px auto;
+  line-height: 25px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
 /* --------------------------------------reason reason_explanation */
 .reason  .reason_explanation_3{
   display: flex;
-  padding: 70px 0px;
+  padding: 45px 0px;
   justify-content: space-between;
 }
 .reason  .reason_explanation_3 p img {
-  height: 422px;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-top: 8px;
   border: 0.5px solid rgb(117, 116, 116);
 }
 .reason  .reason_explanation_3 p{
-  width: 50%;
+  width: 60%;
 }
 .reason  .reason_explanation_3 .box-017 {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
-  padding: 1.5em 1.5em 1em;
+  padding: 0em 1.5em 0em;
 }
 .reason  .reason_explanation_3 .box-017 h4 {
   border-bottom: 3px solid black;
@@ -180,7 +183,8 @@ header .back p img {
 .reason  .reason_explanation_3 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 40px;
+  margin: 0px auto;
+  line-height: 25px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
@@ -195,7 +199,7 @@ header .back p img {
 
 /* ------question */
 .question {
-  margin: 0px 400px;
+  margin: 0px 300px;
   padding-bottom: 80px;
 }
 .question h1 {
@@ -215,7 +219,7 @@ header .back p img {
   position: relative;
   padding: 1em 2em 1em 3em;
   color: rgb(117, 116, 116);
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -257,7 +261,8 @@ header .back p img {
   transform: none;
   opacity: 1;
   text-align: left;
-  padding: 10px 70px;
+  padding: 10px 50px;
+  font-size: 15px;
 }
 .question.qa-006 p::before {
   color: #ff8d8d;
@@ -267,7 +272,7 @@ header .back p img {
 
 /* ------bottom */
 .bottom {
-  margin: 0px 400px;
+  margin: 0px 300px;
   padding-bottom: 80px;
 }
 
@@ -279,14 +284,14 @@ header .back p img {
 }
 .link .box-001 {
   position: relative;
-  margin: 0 auto;
   padding: calc(1em + 25px) 1.5em 1em;
   border: 2px solid #e6edf3;
   border-radius: 5px;
   overflow: auto;
-  height: 350px;
-  width: 400px;
+  height: 250px;
+  width: 250px;
 }
+
 .link .box-001:hover {
   background: #e7e7eb;
 }
@@ -300,7 +305,7 @@ header .back p img {
 }
 .link .box-001 h1 {
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 50%;
   transform: translate(-50%, 100%);
   margin: 0;
@@ -310,13 +315,13 @@ header .back p img {
 }
 .link .box-001 p {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    color: rgb(117, 116, 116);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: rgb(117, 116, 116);
 }
 .footer {
   padding-top: 30px;
@@ -334,7 +339,7 @@ header .back p img {
 @media screen and (max-width: 480px) {
 	body {
     text-align: center;
-    
+    margin: 0px auto;
     color: rgb(117, 116, 116);
   }
   span {
@@ -343,7 +348,6 @@ header .back p img {
   
   /* ------header */
   header {
-    
   }
   header .back {
     color: white;
@@ -381,26 +385,21 @@ header .back p img {
     height: 115px;
   }
 
-  .main {
-
-  }
-
   /* ----------------reason */
   .reason {
     margin: 0px 20px;
     padding-bottom: 15px;
   }
   .reason .content h1 {
-    color: black;
+    color: #757474;
     font-size: 16px;
     font-weight: bold;
     margin: 0px auto;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .reason .reason_title {
     padding-top: 25px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+    padding-bottom: 10px;
   }
   .reason .reason_title h1 {
     font-weight: bold;
@@ -409,37 +408,35 @@ header .back p img {
   }
   .reason .reason_title p {
     font-size:10px;
-    line-height: 3px;
+    line-height: 5px;
   }
 
   /* ----------------------------------------reason reason_explanation */
   .reason  .reason_explanation_1 {
-    padding: 10px 0px 35px 0px;
+    padding: 0px 0px 15px 0px;
     display:flex;
     flex-direction: column-reverse;
   }
   .reason .reason_explanation_2 {
-    padding: 15px 0px 35px 0px;
-    border-top: solid 0.5px;
+    padding: 15px 0px 15px 0px;
     display: block;
   }
   .reason .reason_explanation_3 {
-    padding: 15px 0px 35px 0px;
-    border-top: solid 0.5px;
+    padding: 15px 0px 15px 0px;
     display:flex;
     flex-direction: column-reverse;
   }
   .reason  .reason_explanation_1 p img {
     height: 150px;
-    border: 0.5px solid #edecec;
+    width: 100%;
   }
   .reason  .reason_explanation_2 p img {
     height: 150px;
-    border: 0.5px solid #edecec;
+    width: 100%;
   }
   .reason .reason_explanation_3 p img {
     height: 150px;
-    border: 0.5px solid #edecec;
+    width: 100%;
   }
   .reason  .reason_explanation_1 p{
     width: 80%;
@@ -621,12 +618,12 @@ header .back p img {
   }
   .link .box-001 {
     position: relative;
-    margin: 0 auto;
+    margin: 0px 0px 0px 5px;
     padding: calc(0.5em + 7px) 0.5em 0.5em;
     border: 2px solid #e6edf3;
     border-radius: 5px;
     overflow: auto;
-    height: 90px;
+    height: 80px;
     width: 90px;
   }
   .link .box-001:hover {
@@ -652,7 +649,7 @@ header .back p img {
   }
   .link .box-001 p {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 100%);
     margin: 0;
