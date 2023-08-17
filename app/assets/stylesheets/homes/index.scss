@@ -1,7 +1,7 @@
 body {
-  font-family: 'Sacramento', cursive;
   text-align: center;
   color: rgb(117, 116, 116);
+  margin: 0px;
 }
 span {
   color: #00947a;
@@ -10,9 +10,6 @@ span {
 
 /* ------header */
 header {
-}
-header .icon h1 {
-  margin: 20px;
 }
 header .back {
   color: white;
@@ -25,30 +22,28 @@ header .back {
 }
 header .back p {
   position: absolute;
-  top: 33%;
-  left: 30%;
+  top: 45%;
+  left: 29%;
   transform: translate(-50%, 100%);
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 30px;
 }
 header .back h1 {
   font-weight: bold;
   position: absolute;
-  top: 35%;
+  top: 47%;
   left: 29.5%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 header .back p img {
   font-weight: bold;
   position: absolute;
   top: 50%;
   left: 30%;
-  transform: translate(100%, -9%);
+  transform: translate(100%, -25%);
   margin: 0;
   padding: 0;
   width: 500px;
@@ -66,10 +61,17 @@ header .back p img {
 }
 .reason .reason_title h1 {
   margin-bottom: 20px;
+  font-weight: 600
+}
+.reason .content h1 {
+  color: black;
+  margin: 0px auto;
+  padding-top: 60px;
+  font-weight: 600
 }
 .reason .reason_title p {
-  font-size:16px;
-  line-height:10px;
+  font-size:25px;
+  line-height:20px;
 }
 
 
@@ -96,6 +98,8 @@ header .back p img {
 .reason  .reason_explanation_1 .box-017 h4 {
   border-bottom: 3px solid black;
   border-radius: 2px;
+  color: black;
+  background-color: #F3F3FB;
 }
 .reason  .reason_explanation_1 .box-017 > div {
   margin-bottom: 1.0em;
@@ -104,7 +108,7 @@ header .back p img {
 .reason  .reason_explanation_1 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
@@ -130,6 +134,8 @@ header .back p img {
 .reason  .reason_explanation_2 .box-017 h4 {
   border-bottom: 3px solid black;
   border-radius: 2px;
+  color: black;
+  background-color: #F3F3FB;
 }
 .reason  .reason_explanation_2 .box-017 > div {
   margin-bottom: 1.0em;
@@ -138,7 +144,7 @@ header .back p img {
 .reason  .reason_explanation_2 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
@@ -164,6 +170,8 @@ header .back p img {
 .reason  .reason_explanation_3 .box-017 h4 {
   border-bottom: 3px solid black;
   border-radius: 2px;
+  color: black;
+  background-color: #F3F3FB;
 }
 .reason  .reason_explanation_3 .box-017 > div {
   margin-bottom: 1.0em;
@@ -172,7 +180,7 @@ header .back p img {
 .reason  .reason_explanation_3 .box-017 > p {
   width: 100%;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
   color: rgb(117, 116, 116);
   text-align: left;
 }
@@ -193,6 +201,7 @@ header .back p img {
 .question h1 {
   padding-top: 90px;
   padding-bottom: 30px;
+  font-weight: 600
 }
 .question .qa-006 {
   width: 80%;
@@ -309,13 +318,23 @@ header .back p img {
     font-size: 20px;
     color: rgb(117, 116, 116);
 }
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f3f3f3;
+}
+.footer p {
+  color: #000;
+  font-size: 16px;
+  margin: 0 auto;
+}
 
 
-/* ------------レスポンシブ------------ */
+/* ------------------レスポンシブ480px------------------ */
 @media screen and (max-width: 480px) {
 	body {
-    font-family: 'Sacramento', cursive;
     text-align: center;
+    
     color: rgb(117, 116, 116);
   }
   span {
@@ -324,9 +343,7 @@ header .back p img {
   
   /* ------header */
   header {
-  }
-  header .icon h1 {
-    margin: 0 auto;
+    
   }
   header .back {
     color: white;
@@ -339,7 +356,7 @@ header .back p img {
   }
   header .back p {
     position: absolute;
-    top: 11%;
+    top: 15%;
     left: 50%;
     margin: 0;
     padding: 0;
@@ -348,7 +365,7 @@ header .back p img {
   header .back h1 {
     font-weight: bold;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
@@ -359,9 +376,13 @@ header .back p img {
   header .back p img {
     font-weight: bold;
     position: absolute;
-    transform: translate(-50%, 45%);
+    transform: translate(-50%, 48%);
     width: 213px;
     height: 115px;
+  }
+
+  .main {
+
   }
 
   /* ----------------reason */
@@ -369,9 +390,17 @@ header .back p img {
     margin: 0px 20px;
     padding-bottom: 15px;
   }
+  .reason .content h1 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px auto;
+    padding-top: 30px;
+  }
   .reason .reason_title {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-top: 30px;
   }
   .reason .reason_title h1 {
     font-weight: bold;
@@ -379,80 +408,86 @@ header .back p img {
     margin-bottom: 20px;
   }
   .reason .reason_title p {
-    font-size:12px;
+    font-size:10px;
+    line-height: 3px;
   }
 
   /* ----------------------------------------reason reason_explanation */
   .reason  .reason_explanation_1 {
-    padding: 20px 0px;
+    padding: 10px 0px 35px 0px;
     display:flex;
     flex-direction: column-reverse;
   }
   .reason .reason_explanation_2 {
-    padding: 20px 0px;
+    padding: 15px 0px 35px 0px;
+    border-top: solid 0.5px;
     display: block;
   }
   .reason .reason_explanation_3 {
-    padding: 20px 0px;
+    padding: 15px 0px 35px 0px;
+    border-top: solid 0.5px;
     display:flex;
     flex-direction: column-reverse;
   }
   .reason  .reason_explanation_1 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason  .reason_explanation_2 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason .reason_explanation_3 p img {
     height: 150px;
-    width: 100%;
     border: 0.5px solid #edecec;
   }
   .reason  .reason_explanation_1 p{
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
   }
   .reason .reason_explanation_2 p{
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
   }
   .reason .reason_explanation_3 p{
-    width: 60%;
+    width: 80%;
     margin: 0px auto;
   }
   .reason  .reason_explanation_1 .box-017 {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 0.5em 0.5em 0.5em;
   }
   .reason .reason_explanation_2 .box-017 {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 0.5em 0.5em 1em;
   }
   .reason .reason_explanation_3 .box-017 {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 0.5em 0.5em 1em;
   }
   .reason  .reason_explanation_1 .box-017 h4 {
     border-bottom: 2px solid black;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 14px;
+    color:  black;
+    background-color: #F3F3FB;
   }
   .reason .reason_explanation_2 .box-017 h4 {
     border-bottom: 2px solid black;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 14px;
+    color:  black;
+    background-color: #F3F3FB;
   }
   .reason .reason_explanation_3 .box-017 h4 {
     border-bottom: 2px solid black;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 14px;
+    color:  black;
+    background-color: #F3F3FB;
   }
   .reason  .reason_explanation_1 .box-017 > div {
     margin-bottom: -0.5em;
@@ -468,21 +503,27 @@ header .back p img {
   }
   .reason  .reason_explanation_1 .box-017 > p {
     width: 100%;
+    padding-top: 8px;
     font-size: 10px;
-    color: rgb(117, 116, 116);
+    color: #757474;
     text-align: left;
+    line-height: 11px;
   }
   .reason .reason_explanation_2 .box-017 > p {
     width: 100%;
+    padding-top: 8px;
     font-size: 10px;
-    color: rgb(117, 116, 116);
+    color: #757474;
     text-align: left;
+    line-height: 11px;
   }
   .reason .reason_explanation_3 .box-017 > p {
     width: 100%;
+    padding-top: 8px;
     font-size: 10px;
-    color: rgb(117, 116, 116);
+    color: #757474;
     text-align: left;
+    line-height: 11px;
   }
 
 
@@ -493,7 +534,7 @@ header .back p img {
 
   /* ------question */
   .question {
-    margin: 0px 20px;
+    margin: 0px 30px;
     padding-bottom: 40px;
   }
   .question h1 {
@@ -568,7 +609,7 @@ header .back p img {
 
   /* ------bottom */
   .bottom {
-    margin: 0px 20px;
+    margin: 0px 40px;
     padding-bottom: 40px;
   }
 
@@ -576,7 +617,7 @@ header .back p img {
   .link {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .link .box-001 {
     position: relative;
@@ -585,8 +626,8 @@ header .back p img {
     border: 2px solid #e6edf3;
     border-radius: 5px;
     overflow: auto;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
   .link .box-001:hover {
     background: #e7e7eb;
@@ -618,5 +659,16 @@ header .back p img {
     padding: 0;
     font-size: 5px;
     color: rgb(117, 116, 116);
+  }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f3f3f3;
+  }
+  .footer p {
+    color: #000;
+    font-size: 10px;
+    margin: 0 auto;
   }
 }
